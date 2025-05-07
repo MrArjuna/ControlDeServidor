@@ -1,0 +1,358 @@
+:root {
+  --color-primary: #3498db;
+  --color-success: #2ecc71;
+  --color-error: #e74c3c;
+  --color-warning: #f39c12;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f7fa;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+}
+
+.tab.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Estilos para el Check-in */
+.search-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#searchButton, #clearSearch {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#searchButton:hover, #clearSearch:hover {
+  background-color: #2980b9;
+}
+
+#clearSearch {
+  display: none;
+  background-color: #95a5a6;
+}
+
+.empresa {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.empresa-header {
+  background: var(--color-primary);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empresa-tiempo {
+  background-color: rgba(255,255,255,0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.categoria {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tarea {
+  margin: 10px 0;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.tarea input {
+  margin-right: 10px;
+}
+
+#status {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  display: none;
+  max-width: 300px;
+}
+
+.success { background: var(--color-success); }
+.error { background: var(--color-error); }
+.loading { background: var(--color-primary); }
+.highlight {
+  background-color: rgba(72, 164, 226, 0.3);
+  border: 1px solid rgb(72, 164, 226);
+}
+
+.no-match {
+  display: none;
+}
+
+/* Estilos para los Temporizadores */
+.tiempo-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.tiempo-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tiempo-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.tiempo-item:hover {
+  background-color: #d6eaf8;
+}
+
+.tiempo-empresa {
+  font-weight: 700;
+  color: #2d455c;
+  flex: 1;
+}
+
+.tiempo-contador {
+  font-family: monospace;
+  font-size: 1.2em;
+  margin: 0 15px;
+}
+
+.tiempo-vencido {
+  color: var(--color-error);
+  font-weight: bold;
+}
+
+.tiempo-urgente {
+  color: var(--color-warning);
+  font-weight: bold;
+}
+
+.tiempo-nota {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  margin-top: 5px;
+  flex-basis: 100%;
+}
+
+.tiempo-observacion {
+  color: #e74c3c;
+  font-style: italic;
+  margin: 0 10px;
+  flex: 1;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tiempo-botones {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-reiniciar {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+  background-color: #2980b9;
+}
+
+.btn-reiniciar-365 {
+  background-color: var(--color-success);
+}
+
+.btn-reiniciar-365:hover {
+  background-color: #27ae60;
+}
+
+.btn-editar {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.btn-editar:hover {
+  background-color: #7f8c8d;
+}
+
+/* Modales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.modal-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.btn-guardar {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.btn-guardar:hover {
+  background-color: #27ae60;
+}
+
+.btn-eliminar {
+  background-color: var(--color-error);
+  color: white;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+.btn-cancelar {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-cancelar:hover {
+  background-color: #7f8c8d;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .tiempo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tiempo-contador {
+    margin: 5px 0;
+  }
+  .tiempo-botones {
+    margin-top: 8px;
+  }
+  .tiempo-observacion {
+    margin: 5px 0;
+    max-width: 100%;
+  }
+}
+
+/* Estilo para el mensaje de no disponible */
+.tiempo-botones span {
+  padding: 6px 12px;
+  font-size: 0.9em;
+}

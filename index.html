@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Integrado de Pendientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Sistema Integrado de Pendientes</h1>
+  
+  <div class="tabs">
+    <div class="tab active" data-tab="checkin">Check-in</div>
+    <div class="tab" data-tab="tiempos">Temporizadores</div>
+  </div>
+  
+  <!-- Contenido del Check-in -->
+  <div id="checkin" class="tab-content active">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar empresa, categoría o tarea...">
+      <button id="searchButton">Buscar</button>
+      <button id="clearSearch" style="display:none;">Limpiar</button>
+    </div>
+    
+    <div id="empresas"></div>
+    <div id="status"></div>
+  </div>
+  
+  <!-- Contenido de Temporizadores -->
+  <div id="tiempos" class="tab-content">
+    <div class="tiempo-container">
+      <h2>Tiempos Restantes de Servicios</h2>
+      <ul class="tiempo-lista" id="listaEmpresas"></ul>
+    </div>
+  </div>
+
+  <!-- Modal para editar observaciones -->
+  <div id="observacionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Editar Observación</h3>
+      <input type="text" id="observacionInput" class="observaciones-input" placeholder="Escribe una observación...">
+      <div class="modal-buttons">
+        <button id="eliminarObservacion" class="modal-button btn-eliminar">Eliminar Observación</button>
+        <div>
+          <button id="cancelarEdicion" class="modal-button btn-cancelar">Cancelar</button>
+          <button id="guardarObservacion" class="modal-button btn-guardar">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para confirmar reinicio -->
+  <div id="confirmacionModal" class="modal">
+    <div class="modal-content">
+      <span class="close-confirm">&times;</span>
+      <h3>Confirmar Reinicio</h3>
+      <p id="mensajeConfirmacion">¿Estás seguro que deseas reiniciar el temporizador?</p>
+      <div class="modal-buttons">
+        <button id="cancelarReinicio" class="modal-button btn-cancelar">Cancelar</button>
+        <button id="confirmarReinicio" class="modal-button btn-guardar">Sí, Reiniciar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
