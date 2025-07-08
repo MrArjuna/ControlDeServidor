@@ -28,24 +28,28 @@ const vencimientosOriginales = [
   { empresa: "Floyd Nominas", fecha: "2025-08-04T10:00:00", nota: "" },
   { empresa: "Floyd XML en Linea", fecha: "2025-10-02T10:00:00", nota: "" },
   { empresa: "Kepler RSDG", fecha: "2025-08-15T15:00:00", nota: "" },
-  { empresa: "Mallory RSDG", fecha: "2025-05-23T16:00:00", nota: "" },
+  { empresa: "Mallory RSDG", fecha: "2025-09-05T09:00:00", nota: "" },
   { empresa: "Quatro RSDG", fecha: "2025-08-13T17:00:00", nota: "" },
   { empresa: "Quatro Facturacion", fecha: "2025-12-26T17:00:00", nota: "" },
-  { empresa: "Royal Assets RSDG", fecha: "2025-07-09T13:45:00", nota: "" },
+  { empresa: "Royal Assets RSDG", fecha: "2025-09-05T13:45:00", nota: "" },
   { empresa: "RRB RSDG", fecha: "2025-08-13T11:00:00", nota: "" },
   { empresa: "RRB Facturacion", fecha: "2025-09-10T11:00:00", nota: "" },
-  { empresa: "Tatuus Archivo RSDG", fecha: "2025-06-06T08:30:00", nota: "" },
+  { empresa: "Tatuus Archivo RSDG", fecha: "2025-09-17T08:30:00", nota: "" },
   { empresa: "Tatuus Archivo Contabilidad", fecha: "2025-07-12T08:30:00", nota: "" },
   { empresa: "Tatuus 2 RSDG", fecha: "2025-08-13T23:59:59", nota: "" },
-  { empresa: "Tatuus 3 RSDG", fecha: "2025-05-22T18:00:00", nota: "" },
-  { empresa: "Tatuus 4 RSDG", fecha: "2025-05-23T09:00:00", nota: "" },
+  { empresa: "Tatuus 2 Bancos", fecha: "2026-05-15T23:59:59", nota: "" },
+  { empresa: "Tatuus 4 RSDG", fecha: "2025-09-05T09:00:00", nota: "" },
   { empresa: "Tatuus 5 Contabilidad", fecha: "2025-11-25T12:00:00", nota: "" },
   { empresa: "Tatuus 5 Bancos", fecha: "2026-05-01T12:00:00", nota: "" },
   { empresa: "Tatuus 5 XML En Linea", fecha: "2025-09-12T12:00:00", nota: "" },
   { empresa: "Tatuus 5 Nominas", fecha: "2026-01-04T12:00:00", nota: "" },
   { empresa: "Tatuus 5 TS PLUS", fecha: "2026-02-12T12:00:00", nota: "" },
-  { empresa: "Tatuus 5 RSDG", fecha: "2025-05-23T12:00:00", nota: ""},
-  { empresa: "Zeitten RSDG", fecha: "2025-08-13T19:00:00", nota: "" }
+  { empresa: "Tatuus 5 RSDG", fecha: "2025-09-05T09:00:00", nota: ""},
+  { empresa: "Zeitten RSDG", fecha: "2025-08-13T19:00:00", nota: "" },
+  { empresa: "Server 1 Tatuus RSDG", fecha: "2025-10-20T19:00:00", nota: "" },
+  { empresa: "Server 1 Tatuus Contabilidad", fecha: "2026-07-03T19:00:00", nota: "" },
+  { empresa: "Server 1 Tatuus Bancos", fecha: "2026-07-04T19:00:00", nota: "" }
+
 ];
 
 // Cargar datos guardados de los temporizadores
@@ -172,7 +176,7 @@ function generarInterfaz() {
     header.appendChild(headerText);
     
     // Mostrar tiempo restante si existe para esta empresa
-    const tiempoEmpresa = vencimientos.find(v => v.empresa.startsWith(empresa));
+   /*const tiempoEmpresa = vencimientos.find(v => v.empresa.startsWith(empresa));
     if (tiempoEmpresa) {
       const tiempoRestante = new Date(tiempoEmpresa.fecha) - new Date();
       if (tiempoRestante > 0) {
@@ -184,7 +188,7 @@ function generarInterfaz() {
         tiempoSpan.title = `Tiempo restante para ${tiempoEmpresa.empresa.split(' ')[1] || 'servicio'}`;
         header.appendChild(tiempoSpan);
       }
-    }
+    }*/
     
     empresaDiv.appendChild(header);
     
@@ -397,7 +401,7 @@ function actualizarTiempos() {
 
       const boton365 = document.createElement("button");
       boton365.className = "btn-reiniciar btn-reiniciar-365";
-      boton365.textContent = "365 días";
+      boton365.textContent = "Reiniciar";
       boton365.onclick = () => reiniciarTiempo(empresa, 365);
 
       if (empresa.includes("RSDG")) {
