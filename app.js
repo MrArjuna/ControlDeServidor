@@ -52,7 +52,8 @@ const vencimientosOriginales = [
   { empresa: "Server 2 Tatuus Bancos", fecha: "2026-07-12T19:00:00", nota: "" },
   { empresa: "Server 2 Tatuus Conta", fecha: "2026-07-12T19:00:00", nota: "" },
   { empresa: "Server 2 Tatuus RSDG", fecha: "2025-11-05T19:00:00", nota: "" },
-  { empresa: "Server 3 Tatuus RSDG", fecha: "2025-11-22T19:00:00", nota: "" }
+  { empresa: "Server 3 Tatuus RSDG", fecha: "2025-11-22T19:00:00", nota: "" },
+  { empresa: "Server 3 Tatuus Conta y Bancos", fecha: "2026-08-14T19:00:00", nota: "" }
 
 ];
 
@@ -538,3 +539,4 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
