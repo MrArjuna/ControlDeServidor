@@ -2,7 +2,7 @@
 const CONFIG = {
   scriptUrl: 'https://script.google.com/macros/s/AKfycbwz35vUShpFPB8gZ9-47JbgLZY5lLcSCxO8tiolI33thH8bIgMs4RLvQ1aRMapcnorg/exec',
   empresas: [
-    "Tatuus 5", "Tatuus 4", "Tatuus 3", "Tatuus 2", "Tatuus Archivo",
+    "Tatuus 5", "Tatuus 4", "Tatuus 31", "Tatuus 2", "Tatuus Archivo",
     "EALegal", "RRB", "Floyd", "Royal Assets", "Mallory", "Quatro", "Zeitten", "Kepler"
   ],
   categorias: {
@@ -40,7 +40,6 @@ const vencimientosOriginales = [
   { empresa: "Server 4 Conta Y Bancos", fecha: "2026-08-10T23:59:59", nota: "" },
   { empresa: "Tatuus 5 Contabilidad", fecha: "2025-11-25T12:00:00", nota: "" },
   { empresa: "Tatuus 5 Bancos", fecha: "2026-05-01T12:00:00", nota: "" },
-  { empresa: "Tatuus 5 XML En Linea", fecha: "2025-09-12T12:00:00", nota: "" },
   { empresa: "Tatuus 5 Nominas", fecha: "2026-01-04T12:00:00", nota: "" },
   { empresa: "Tatuus 5 TS PLUS", fecha: "2026-02-12T12:00:00", nota: "" },
   { empresa: "Tatuus 5 RSDG", fecha: "2025-09-05T09:00:00", nota: ""},
@@ -538,6 +537,7 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
 
 
 
