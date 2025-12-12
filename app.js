@@ -18,10 +18,10 @@ const CONFIG = {
 
 // Datos de los temporizadores
 const vencimientosOriginales = [
-  { empresa: "EALegal RSDG", fecha: "2025-07-18T14:00:00", nota: "" },
-  { empresa: "EALegal Contabilidad", fecha: "2025-12-13T14:00:00", nota: "" },
-  { empresa: "EALegal Facturacion", fecha: "2025-12-13T14:00:00", nota: "" },
-  { empresa: "EALegal Nominas", fecha: "2025-12-13T14:00:00", nota: "" },
+  { empresa: "EALegal RSDG", fecha: "2026-02-10T14:00:00", nota: "" },
+  { empresa: "EALegal Contabilidad", fecha: "2026-12-13T14:00:00", nota: "" },
+  { empresa: "EALegal Facturacion", fecha: "2026-12-13T14:00:00", nota: "" },
+  { empresa: "EALegal Nominas", fecha: "2026-12-13T14:00:00", nota: "" },
   { empresa: "Floyd RSDG", fecha: "2025-08-13T10:00:00", nota: "" },
   { empresa: "Floyd Facturacion", fecha: "2026-08-04T10:00:00", nota: "" },
   { empresa: "Floyd Bancos", fecha: "2026-02-19T10:00:00", nota: "" },
@@ -536,6 +536,7 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
 
 
 
