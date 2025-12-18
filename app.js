@@ -382,7 +382,7 @@ function actualizarTiempos() {
       tiempoSpan.innerHTML = `<span class="tiempo-vencido">¡VENCIDO!</span>`;
     } else {
       tiempoSpan.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
-      if (dias < 15) {
+      if (dias < 22) {
         tiempoSpan.classList.add("tiempo-urgente");
       }
     }
@@ -536,6 +536,7 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
 
 
 
