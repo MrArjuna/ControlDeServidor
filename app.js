@@ -30,7 +30,7 @@ const vencimientosOriginales = [
   { empresa: "Kepler RSDG", fecha: "2025-08-15T15:00:00", nota: "" },
   { empresa: "Mallory RSDG", fecha: "2025-09-05T09:00:00", nota: "" },
   { empresa: "Quatro RSDG", fecha: "2025-08-13T17:00:00", nota: "" },
-  { empresa: "Quatro Facturacion", fecha: "2025-12-26T17:00:00", nota: "" },
+  { empresa: "Quatro Facturacion", fecha: "2026-12-29T17:00:00", nota: "" },
   { empresa: "Royal Assets RSDG", fecha: "2025-09-05T13:45:00", nota: "" },
   { empresa: "RRB RSDG", fecha: "2025-08-13T11:00:00", nota: "" },
   { empresa: "Tatuus Archivo RSDG", fecha: "2025-09-17T08:30:00", nota: "" },
@@ -536,6 +536,7 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
 
 
 
