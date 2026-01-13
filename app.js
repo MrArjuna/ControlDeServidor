@@ -26,6 +26,7 @@ const vencimientosOriginales = [
   { empresa: "Floyd Facturacion", fecha: "2026-08-04T10:00:00", nota: "" },
   { empresa: "Floyd Bancos", fecha: "2026-02-19T10:00:00", nota: "" },
   { empresa: "Floyd Nominas", fecha: "2026-08-04T10:00:00", nota: "" },
+  { empresa: "RoyalAssets Contabilidad", fecha: "2027-01-13T10:00:00", nota: "" },
   { empresa: "Floyd XML en Linea", fecha: "2026-10-02T10:00:00", nota: "" },
   { empresa: "Kepler RSDG", fecha: "2025-08-15T15:00:00", nota: "" },
   { empresa: "Mallory RSDG", fecha: "2025-09-05T09:00:00", nota: "" },
@@ -536,6 +537,7 @@ window.handleError = (err) => mostrarEstado({
   status: 'error',
   message: err.message || 'Error en el servidor'
 });
+
 
 
 
