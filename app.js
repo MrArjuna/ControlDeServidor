@@ -29,7 +29,7 @@ const vencimientosOriginales = [
   { empresa: "Floyd XML en Linea", fecha: "2026-10-02T10:00:00", nota: "" },
   { empresa: "Kepler RSDG", fecha: "2025-08-15T15:00:00", nota: "" },
   { empresa: "Mallory RSDG", fecha: "2025-09-05T09:00:00", nota: "" },
-  { empresa: "Quatro RSDG", fecha: "2025-08-13T17:00:00", nota: "" },
+  { empresa: "Quatro RSDG", fecha: "2026-07-13T17:00:00", nota: "" },
   { empresa: "Quatro Facturacion", fecha: "2026-12-29T17:00:00", nota: "" },
   { empresa: "RoyalAssets Contabilidad", fecha: "2027-01-13T10:00:00", nota: "" },
   { empresa: "Royal Assets RSDG", fecha: "2025-09-05T13:45:00", nota: "" },
