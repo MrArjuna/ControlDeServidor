@@ -18,7 +18,7 @@ const CONFIG = {
 
 // Datos de los temporizadores
 const vencimientosOriginales = [
-  { empresa: "EALegal RSDG", fecha: "2026-02-10T14:00:00", nota: "" },
+  { empresa: "EALegal RSDG", fecha: "2026-06-06T14:00:00", nota: "" },
   { empresa: "EALegal Contabilidad", fecha: "2026-12-13T14:00:00", nota: "" },
   { empresa: "EALegal Facturacion", fecha: "2026-12-13T14:00:00", nota: "" },
   { empresa: "EALegal Nominas", fecha: "2026-12-13T14:00:00", nota: "" },
