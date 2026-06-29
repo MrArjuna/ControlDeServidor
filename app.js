@@ -48,7 +48,7 @@ const vencimientosOriginales = [
   { empresa: "Server 2 Tatuus Conta y Bancos", fecha: "2027-07-12T19:00:00", nota: "" },
 //{ empresa: "Server 2 Tatuus RSDG", fecha: "2025-11-05T19:00:00", nota: "" },
 //{ empresa: "Server 3 Tatuus RSDG", fecha: "2025-11-22T19:00:00", nota: "" },
-  { empresa: "Server 3 Tatuus Conta y Bancos", fecha: "2026-08-01T19:00:00", nota: "" },
+  { empresa: "Server 3 Tatuus Conta y Bancos", fecha: "2027-08-01T19:00:00", nota: "" },
   { empresa: "Server 1-4 y PF RSDG", fecha: "2026-10-11T23:59:59", nota: "" },
   { empresa: "Server 4 Conta Y Bancos", fecha: "2026-08-10T23:59:59", nota: "" }
 
