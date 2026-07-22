@@ -37,7 +37,7 @@ const vencimientosOriginales = [
   { empresa: "Tatuus 5 Nominas", fecha: "2027-01-04T12:00:00", nota: "" },
  //{ empresa: "Tatuus 5 TS PLUS", fecha: "2026-02-12T12:00:00", nota: "" },
   { empresa: "Zeitten TS PLUS", fecha: "2027-03-10T12:00:00", nota: "" },
-  { empresa: "Tatuus 5 RSDG", fecha: "2026-07-27T09:00:00", nota: ""},
+  { empresa: "Tatuus 5 RSDG", fecha: "2026-11-27T09:00:00", nota: ""},
  // { empresa: "Zeitten RSDG", fecha: "2025-08-13T19:00:00", nota: "" },
 //{ empresa: "Server 1 Tatuus RSDG", fecha: "2025-10-20T19:00:00", nota: "" },
   { empresa: "Server 1 Tatuus Contabilidad y Bancos", fecha: "2027-07-04T19:00:00", nota: "" },
