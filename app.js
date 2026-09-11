@@ -390,8 +390,8 @@ function actualizarTiempos() {
     const botonesContainer = document.createElement("div");
     botonesContainer.className = "tiempo-botones";
     
-    // Solo mostrar botones si tiene 15 días o menos o está vencido
-    if (dias <= 15 || tiempoRestante <= 0) {
+    // Solo mostrar botones si tiene 10 días o menos o está vencido
+    if (dias <= 10 || tiempoRestante <= 0) {
       const boton119 = document.createElement("button");
       boton119.className = "btn-reiniciar";
       boton119.textContent = "Reiniciar";
