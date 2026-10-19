@@ -23,7 +23,7 @@ const vencimientosOriginales = [
   { empresa: "EALegal Facturacion", fecha: "2026-12-13T14:00:00", nota: "" },
   { empresa: "EALegal Nominas", fecha: "2026-12-13T14:00:00", nota: "" },
   { empresa: "Floyd RSDG", fecha: "2026-10-09T10:00:00", nota: "" },
-  { empresa: "Kepler RSDG", fecha: "2026-11-07T15:00:00", nota: "" },
+  { empresa: "Kepler RSDG", fecha: "2027-01-07T15:00:00", nota: "" },
   { empresa: "Mallory RSDG", fecha: "2026-12-02T09:00:00", nota: "" },
   { empresa: "Quatro RSDG", fecha: "2026-11-09T17:00:00", nota: "" },
   { empresa: "Quatro Facturacion", fecha: "2026-12-29T17:00:00", nota: "" },
