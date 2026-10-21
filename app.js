@@ -29,7 +29,7 @@ const vencimientosOriginales = [
   { empresa: "Quatro Facturacion", fecha: "2026-12-29T17:00:00", nota: "" },
   { empresa: "RoyalAssets Contabilidad", fecha: "2027-01-13T10:00:00", nota: "" },
   { empresa: "Royal Assets RSDG", fecha: "2026-11-27T13:45:00", nota: "" },
-  { empresa: "RRB RSDG", fecha: "2026-11-02T11:00:00", nota: "" },
+  { empresa: "RRB RSDG", fecha: "2027-03-02T11:00:00", nota: "" },
   { empresa: "Tatuus Archivo RSDG", fecha: "2026-11-20T08:30:00", nota: "" },
   { empresa: "Tatuus Archivo Contabilidad", fecha: "2027-07-10T08:30:00", nota: "" },
   { empresa: "Tatuus 5 Contabilidad", fecha: "2026-11-25T12:00:00", nota: "" },
