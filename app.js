@@ -1,5 +1,5 @@
 // Configuración del Check-in
-const CONFIG = {
+//const CONFIG = {
   scriptUrl: 'https://script.google.com/macros/s/AKfycbwz35vUShpFPB8gZ9-47JbgLZY5lLcSCxO8tiolI33thH8bIgMs4RLvQ1aRMapcnorg/exec',
   empresas: [
     "Tatuus 5", "Tatuus Archivo", "Server 1", "Server 2", "Server 3", "Server 4",
